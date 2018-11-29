@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import Card from '../components/Cards';
+import ModalImage from 'react-modal-image';
 
 const IndexPage = () => (
   <div>
@@ -8,21 +9,6 @@ const IndexPage = () => (
         <div className="HeroGroup">
           <h1>Canon A1 Photographies</h1>
             <p>Picture done with Canon A1.</p>
-              <Link to="/page-2/">Go to page 2</Link>
-                <div className="Logos"> 
-                <img src={require('../images/logo-sketch.png')}
-                  width="50" />                
-                <img src={require('../images/logo-figma.png')}
-                  width="50" />                
-                <img src={require('../images/logo-studio.png')}
-                  width="50" />                
-                <img src={require('../images/logo-framer.png')}
-                  width="50" />                
-                <img src={require('../images/logo-react.png')}
-                  width="50" />                
-                <img src={require('../images/logo-swift.png')}
-                  width="50" />                
-                </div>
                   <svg width="2560" height="172" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill="white">
                     <animate repeatCount="indefinite" fill="freeze" attributeName="d" dur="10s"
@@ -35,6 +21,7 @@ const IndexPage = () => (
               </svg>
           </div>
     </div>
+
     <div className="Cards">
       <h2> Actual pictures </h2>
       <Card 
@@ -46,6 +33,7 @@ const IndexPage = () => (
 )
 
 export default IndexPage
+
 
 
 

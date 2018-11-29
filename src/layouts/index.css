@@ -108,3 +108,19 @@ font-weight: 600;
   }
 
 }
+
+.App {
+  max-width: 800px;
+  grid-gap: 10px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  align-items: center;
+  justify-items: center;
+}
+
+.AppImage {
+  padding: 5px;
+  min-height: 200px;
+  min-width: 250px;
+}
